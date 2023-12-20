@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="Styles3.css">
+  </head>
+  <body>
+    <h1 id="title">GTA VI Beta Test</h1>
+      <p id="description">The information will be collected and used to determine our next round of beta testers<p>
+    
+    <h3>Please be honest and accurate</h3>
+    <form id="survey-form">
+     <label id="name-label">Please enter your name: <input id="name" type="text" placeholder="John smith" required></input></label>
+      
+      <label id="email-label">Please enter your email: <input id="email" type="email" placeholder="@fakemail.com" required></input></label>
+      
+      <label id="number-label">Please enter your age: <input id="number" type="number" min="13" max="100" placeholder="Age" required></input></label>
+      
+      <h4><label for="dropdown">How would you rate the apperence of the GTA VI announcement Trailer: </label> </h4>
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select One)</option>
+            <option value="Amazing">Amazing</option>
+            <option value="Good">Good</option>
+            <option value="Mediocre">Mediocre</option>
+            <option value="Bad">Bad</option>
+          </select>
+        <h4>Do you have excperience beta testing?<h4>
+           <label for="yes"><input id="yes" type="radio" name="excperience" value="yes" class="inline" checked /> Yes</label>
+        <label for="no"><input id="no" type="radio" name="excperience" value="no" class="inline" /> No</label>
+
+        <h4>Which other "Grand Theft Auto" instalations have you played before?<h4>
+          <label for="gta-vice-city"><input id="gta-vice-city" type="checkbox" value="gta-vice-city" class="inline"/> GTA Vice City</label>
+          <label for="gta-san-andreas"><input id="gta-san-andreas" name="other" type="checkbox" value="gta-san-andreas" class="inline"/> GTA San Andreas</label>
+          <label for="gta-iv"><input id="gta-iv" name="other" type="checkbox" value="gta-iv" class="inline"/> GTA IV</label>
+          <label for="gta-v"><input id="gta-v" name="other" type="checkbox" value="gta-v" class="inline"/> GTA V</label>
+          <h4>Finally please take the time to give a small explanation of yourself, past beta testing excperience (if applicable), and why you want to beta test for rockstar.
+            <label for="bio">
+            <textarea id="bio" name="bio" rows="8" cols="66" placeholder="I have done beta testing for...."></textarea>
+          </label>
+       <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" value= "terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" /> 
+    </form>
+  </body>
+</html>
